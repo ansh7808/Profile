@@ -1,0 +1,75 @@
+/* write your css here */
+/* Apply a background to the whole page */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    overflow: hidden;
+  }
+  
+  /* Container to hold content */
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Starry background */
+  .stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Individual stars */
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow: 0 0 4px white;
+    animation: fall linear infinite;
+  }
+  
+  /* Generate random positions and animations */
+  @keyframes fall {
+    from {
+      transform: translateY(-10vh);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  
+  /* Positioning each star randomly */
+  .star:nth-child(1) { top: 5%; left: 20%; animation-duration: 3s; }
+  .star:nth-child(2) { top: 10%; left: 40%; animation-duration: 4s; }
+  .star:nth-child(3) { top: 15%; left: 60%; animation-duration: 5s; }
+  .star:nth-child(4) { top: 20%; left: 80%; animation-duration: 3s; }
+  .star:nth-child(5) { top: 25%; left: 10%; animation-duration: 6s; }
+  .star:nth-child(6) { top: 30%; left: 50%; animation-duration: 5s; }
+  .star:nth-child(7) { top: 35%; left: 70%; animation-duration: 4s; }
+  .star:nth-child(8) { top: 40%; left: 90%; animation-duration: 3s; }
+  .star:nth-child(9) { top: 45%; left: 30%; animation-duration: 6s; }
+  .star:nth-child(10) { top: 50%; left: 60%; animation-duration: 4s; }
+  
+  .star:nth-child(11) { top: 55%; left: 5%; animation-duration: 5s; }
+  .star:nth-child(12) { top: 60%; left: 35%; animation-duration: 6s; }
+  .star:nth-child(13) { top: 65%; left: 75%; animation-duration: 4s; }
+  .star:nth-child(14) { top: 70%; left: 50%; animation-duration: 3s; }
+  .star:nth-child(15) { top: 75%; left: 90%; animation-duration: 5s; }
+  .star:nth-child(16) { top: 80%; left: 15%; animation-duration: 4s; }
+  .star:nth-child(17) { top: 85%; left: 55%; animation-duration: 6s; }
+  .star:nth-child(18) { top: 90%; left: 85%; animation-duration: 3s; }
+  .star:nth-child(19) { top: 95%; left: 40%; animation-duration: 5s; }
+  .star:nth-child(20) { top: 100%; left: 70%; animation-duration: 4s; }
+  
